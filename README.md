@@ -1,24 +1,6 @@
-# README
+# Remote Modals Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application shows how to implement remote modal windows in your rails application. It is a demo for the article "5 Steps to Add Remote Modals to Your Rails App" that you can find in [JetThoughts blog](https://jtway.co/5-steps-to-add-remote-modals-to-your-rails-app-8c21213b4d0c).
 
-Things you may want to cover:
+You can check working demo on heroku: https://remote-modals-rails.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
