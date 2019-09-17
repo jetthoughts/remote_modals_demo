@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: [:destroy]
+  before_action :set_message, only: [:edit, :update, :destroy]
 
   respond_to :html, :json
 
@@ -10,6 +10,15 @@ class MessagesController < ApplicationController
   def new
     @message = Message.new
     respond_modal_with @message
+  end
+
+  def edit
+    respond_modal_with @message
+  end
+
+  def update
+    @message.update(message_params)
+    respond_modal_with @message, location: messages_path
   end
 
   def create

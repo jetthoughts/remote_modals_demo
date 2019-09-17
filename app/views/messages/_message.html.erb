@@ -1,9 +1,12 @@
 <div class="card border-secondary mb-3">
   <div class="card-header d-flex justify-content-between">
     <%= message.name.truncate(20) %>
-    <%= link_to message, data: { confirm: 'Are you sure?' }, method: :delete, class: 'text-dark' do %>
-      <span aria-hidden="true">&times;</span>
-    <% end %>
+    <div class="d-flex justify-content-end">
+      <%= link_to 'Edit', edit_message_path(message), class: 'mr-4', data: { modal: true } %>
+      <%= link_to message, data: { confirm: 'Are you sure?' }, method: :delete, class: 'text-dark' do %>
+        <span aria-hidden="true">&times;</span>
+      <% end %>
+    </div>
   </div>
   <div class="card-body text-secondary">
     <p class="card-text">
